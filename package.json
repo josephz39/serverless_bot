@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "discord bot serverless",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node -r dotenv/config server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord-interactions": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-raw-body": "^5.0.0"
+  }
 }
